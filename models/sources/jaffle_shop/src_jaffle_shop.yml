@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: jaffle_shop
+    description: some description here   #'{{ doc("src_jaffle_shop") }}'
+    database: raw
+    schema: jaffle_shop
+    tables: 
+      - name: js_orders
+        description: '{{ doc("src_jaffle_shop") }}'
+        identifier: orders

@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: fact_orders
+    description: '{{ doc("fact_orders") }}'
+    columns:
+      - name: order_id
+        description: raw.jaffle_shop.orders.orderID
+        tests:
+          - not_null
